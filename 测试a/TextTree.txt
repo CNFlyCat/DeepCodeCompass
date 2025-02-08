@@ -1,0 +1,25 @@
+├── .gitignore
+├── src
+│   ├── FileDirectory.json
+│   ├── chatapi
+│   │   └── deepseek.py
+│   ├── core
+│   │   ├── __pycache__
+│   │   │   ├── directorytrre.cpython-312.pyc
+│   │   │   ├── jsonwriter.cpython-312.pyc
+│   │   │   └── texttreewriter.cpython-312.pyc
+│   │   ├── directorytrre.py
+│   │   ├── jsonwriter.py
+│   │   └── texttreewriter.py
+│   ├── gui
+│   │   ├── __pycache__
+│   │   │   ├── chat_display.cpython-312.pyc
+│   │   │   └── message_input.cpython-312.pyc
+│   │   ├── chat_display.py
+│   │   ├── main_window.py
+│   │   └── message_input.py
+│   ├── main.py
+│   └── messages
+└── 测试a
+    ├── FileDirectory.json
+    └── TextTree.txt

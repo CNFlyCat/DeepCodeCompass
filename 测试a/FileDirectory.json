@@ -1,0 +1,34 @@
+{
+    ".gitignore": "file",
+    "src": {
+        "chatapi": {
+            "deepseek.py": "file"
+        },
+        "core": {
+            "directorytrre.py": "file",
+            "jsonwriter.py": "file",
+            "texttreewriter.py": "file",
+            "__pycache__": {
+                "directorytrre.cpython-312.pyc": "file",
+                "jsonwriter.cpython-312.pyc": "file",
+                "texttreewriter.cpython-312.pyc": "file"
+            }
+        },
+        "FileDirectory.json": "file",
+        "gui": {
+            "chat_display.py": "file",
+            "main_window.py": "file",
+            "message_input.py": "file",
+            "__pycache__": {
+                "chat_display.cpython-312.pyc": "file",
+                "message_input.cpython-312.pyc": "file"
+            }
+        },
+        "main.py": "file",
+        "messages": {}
+    },
+    "测试a": {
+        "FileDirectory.json": "file",
+        "TextTree.txt": "file"
+    }
+}

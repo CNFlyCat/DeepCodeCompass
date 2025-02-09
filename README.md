@@ -5,6 +5,7 @@
 [![GUI](https://img.shields.io/badge/GUI-Tkinter-brightgreen?style=for-the-badge&logo=tkinter&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
 
 **一款简洁易用的图形界面工具，用于快速遍历指定目录，并将目录结构以文本或 JSON 格式导出的程序。**
+
 **A simple and easy-to-use graphical interface tool for quickly traversing a specified directory and exporting the directory structure as text or JSON.**
 
 ---

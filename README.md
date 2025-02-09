@@ -4,7 +4,8 @@
 [![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![GUI](https://img.shields.io/badge/GUI-Tkinter-brightgreen?style=for-the-badge&logo=tkinter&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
 
-**一款简洁易用的图形界面工具，用于快速遍历指定目录，并将目录结构以文本或 JSON 格式导出。**
+**一款简洁易用的图形界面工具，用于快速遍历指定目录，并将目录结构以文本或 JSON 格式导出的程序。**
+**A simple and easy-to-use graphical interface tool for quickly traversing a specified directory and exporting the directory structure as text or JSON.**
 
 ---
 
@@ -75,7 +76,7 @@
 ## 📂 输出格式示例
 
 ### TXT 文本格式
-
+```
 ├── src
 │ ├── core
 │ │ ├── directorytree.py
@@ -87,6 +88,58 @@
 │ └── main.py
 ├── README.md
 └── FileDirectory.json 
+```
 
 ![image](https://github.com/user-attachments/assets/2da71d0b-0d81-4d55-ac52-c2a07af0042b)
 
+### JSON 数据格式
+```
+{
+    "src": {
+        "core": {
+            "directorytree.py": "file",
+            "ignorefilereader.py": "file",
+            "jsonwriter.py": "file",
+            "texttreewriter.py": "file"
+        },
+        "gui": {
+            "__pycache__": {}
+        },
+        "main.py": "file"
+    },
+    "README.md": "file",
+    "FileDirectory.json": "file"
+}
+```
+
+![image](https://github.com/user-attachments/assets/e8df8b4f-10ea-4a18-849e-ed8d2d25a7a9)
+
+## 🚫 忽略规则说明
+
+程序支持两种方式的忽略规则：
+
+1.  **.gitignore 文件**:  如果你的项目有 `.gitignore` 文件，你可以使用他来忽略你不想输出的文件目录，程序兼容 `.gitignore` 语法！
+
+2.  **fileignore.txt 文件**:  你也可以自行创建 `fileignore.txt` 文件来自定义忽略规则，每行一条规则语法与 `.gitignore` 一致。
+
+**忽略规则示例:**
+
+```
+# 注释行会被忽略
+
+*.pyc         # 忽略所有 .pyc 文件
+__pycache__/  # 忽略名为 __pycache__ 的文件夹
+temp/        # 忽略名为 temp 的文件夹（及其所有内容）
+output.txt   # 忽略名为 output.txt 的文件
+```
+
+## 🚀 未来计划 
+
+*   [ ]  更丰富的忽略规则配置 (例如，支持更复杂的通配符、排除模式等)。
+*   [ ]  文件类型统计功能 (统计各类文件的数量和大小)。
+*   [ ]  提取指定后缀的程序内容，例如提取.c文件内代码或.py文件内代码。
+*   [ ]  更美观的 UI 界面主题切换。
+
+---
+
+感谢使用！如有任何问题或建议，欢迎在 [**[Issue 页面](https://github.com/CNFlyCat/DeepCodeCompass/issues)**]提出问题或建议！
